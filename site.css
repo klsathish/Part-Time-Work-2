@@ -180,3 +180,38 @@ a {
         padding-left: calc(var(--nav-width) + 188px)
     }
 }
+
+@media screen and (max-width: 390px) {
+    body {
+        margin: calc(var(--header-height) + 1rem) 0 0 0;
+        padding-left: 1rem; /* Adjust padding for narrow viewports */
+    }
+
+    .header {
+        height: calc(var(--header-height) + 1rem);
+        padding: 0 1rem;
+    }
+
+    .header_img {
+        width: 30px; /* Reduce image size for smaller viewports */
+        height: 30px;
+    }
+
+    .header_img img {
+        width: 35px; /* Adjust the image width */
+    }
+
+    .l-navbar {
+        left: 0;
+        padding: 1rem 0;
+    }
+
+    .show {
+        width: calc(var(--nav-width) + 100px); /* Adjust based on viewport */
+    }
+
+    .body-pd {
+        padding-left: 1rem; /* Simplified padding for small viewports */
+    }
+}
+
